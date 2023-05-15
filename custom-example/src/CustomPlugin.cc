@@ -30,11 +30,11 @@ QGC_LOGGING_CATEGORY(CustomLog, "CustomLog")
 
 CustomVideoReceiver::CustomVideoReceiver(QObject* parent)
     : VideoReceiver(parent)
-{
+{/*
 #if defined(QGC_GST_STREAMING)
     //-- Shorter RTSP test interval
     _restart_time_ms = 1000;
-#endif
+    #endif*/
 }
 
 CustomVideoReceiver::~CustomVideoReceiver()
@@ -172,14 +172,14 @@ CustomPlugin::options()
 QString
 CustomPlugin::brandImageIndoor(void) const
 {
-    return QStringLiteral("/custom/img/void.png");
+    return QStringLiteral("/custom/img/arcsky-logo.png");
 }
 
 //-----------------------------------------------------------------------------
 QString
 CustomPlugin::brandImageOutdoor(void) const
 {
-    return QStringLiteral("/custom/img/void.png");
+    return QStringLiteral("/custom/img/arcsky-logo.png");
 }
 
 //-----------------------------------------------------------------------------
