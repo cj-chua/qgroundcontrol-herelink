@@ -83,7 +83,7 @@ Item {
                 QGCToolBarButton {
                     id:                 settingsButton
                     Layout.fillHeight:  true
-                    icon.source:        "/res/QGCLogoWhite"
+                    icon.source:        "/res/arcsky-logo.png"
                     logo:               true
                     visible:            !QGroundControl.corePlugin.options.combineSettingsAndSetup
                     onClicked: {
